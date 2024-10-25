@@ -4,6 +4,7 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 from werkzeug.security import generate_password_hash, check_password_hash
 from forms import PostForm, RegistrationForm, LoginForm
 import markdown
+import os
 from bson.objectid import ObjectId  # Import ObjectId for MongoDB
 
 app = Flask(__name__)
